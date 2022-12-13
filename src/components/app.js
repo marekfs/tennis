@@ -2,7 +2,7 @@ import Timer from './timer'
 
 const App = () => (
   <div id='app'>
-		<Timer />
+    <Timer />
   </div>
 )
 
