@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
   mode: "jit",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -302,6 +300,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'IBM Plex Sans',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -319,6 +318,7 @@ module.exports = {
       ],
       serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
+        'IBM Plex Mono',
         'ui-monospace',
         'SFMono-Regular',
         'Menlo',
@@ -953,14 +953,10 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {
-      fontFamily: {
-        sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
-      },
-    },
+    extend: {},
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography"), require("prettier-plugin-tailwindcss")],
 }
