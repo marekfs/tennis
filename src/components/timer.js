@@ -32,7 +32,7 @@ const Timer = () => {
   return(
     <div class='flex flex-col mx-auto justify-center bg-blue-500 h-screen'>
       <div class='column-1'>
-        <h1 class='font-sans text-2xl md:text-4xl lg:text-6xl text-yellow-200 pt-10 text-center'>
+        <h1 class='font-sans font-bold italic text-2xl md:text-4xl lg:text-6xl text-yellow-200 pt-10 text-center'>
           Countdown to Tennis Season
         </h1>
         <h1 class='font-mono text-2xl md:text-4xl lg:text-6xl text-yellow-200 pt-10 text-center'>{`${days}D ${hours}H ${ minutes}m${seconds}s`}</h1>
