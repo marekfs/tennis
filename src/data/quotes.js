@@ -47,6 +47,10 @@ const quotes = [
     text: '"If you see a tennis player as if he is working hard, that means he isn\'t very good."',
     author: 'Helen Wills Moody'
   },
+  {
+    text: '"I can\'t play tennis without a dampener."',
+    author: 'Josh Hamilton'
+  },
 ]
 
 export default quotes;
